@@ -39,7 +39,7 @@ struct List
 	int size()
 	{
 		if (!pRoot)
-			throw s;
+			cout << "list is empty";
 
 		int i = 0;
 		Node* tmp = pRoot;
@@ -72,7 +72,7 @@ struct List
 	void printAll()
 	{
 		if (!pRoot)
-			throw s;
+			cout << "list is empty";
 
 		Node* temp = pRoot;
 
