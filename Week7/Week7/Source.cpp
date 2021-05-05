@@ -95,7 +95,7 @@ int bs4(int a[][4], int n, int m)
 				else if (a[i][j] > mid) bigger++;
 			}
 
-		if (abs(lesser - bigger)) return mid;
+		if ((lesser + bigger) % 2 != 0 && abs(lesser - bigger) <= 1) return mid;
 		
 		if (bigger > lesser) l = mid;
 		else if (lesser > bigger) r = mid;
